@@ -10,6 +10,7 @@ export default {
 				"black-pl": "#131a21",
 				"pink-pl": "#db46d9",
 				"skyblue-pl": "#2e69f2",
+				"purple-pl": "#6030e0",
 			},
 		},
 	},
