@@ -7,69 +7,66 @@ import SkillsIcon from "./icons/Skills.astro";
 import ContactIcon from "./icons/Contact.astro";
 ---
 
-<nav class="fixed flex item-center bg-gradient-to-r from-indigo-500 w-1/5 h-screen">
-	<ul class="flex flex-col justify-center m-[10px] items-center">
-		<img
-			class="rounded-full m-[15px] lg:size-[130px] mg:size-[100px]"
-			src="elyrivenlogo.png"
-			alt="ElyRiven Logo"
-		/>
-		<div
-			class="flex flex-col rounded-full w-[100px] h-[560px] bg-black-pl items-center">
-			<li
-				class="flex flex-col items-center justify-center mt-[20px] bg-pink-pl text-white shadow-2x1 rounded-full size-[70px] transition-all before:absolute before:h-0 before:w-0 before:rounded-full before:bg-skyblue-pl before:duration-500 before:ease-out hover:shadow-orange-600 hover:before:h-[70px] hover:before:w-[70px] hover:text-black-pl">
-				<a
-					href="#home"
-					class="flex w-full h-full relative rounded-full">
-					<HomeIcon class="size-10 m-[15px]" /></a
-				>
-			</li>
-			<li
-				class="flex flex-col items-center justify-center mt-[20px] bg-pink-pl text-white shadow-2xl rounded-full size-[70px] transition-all before:absolute before:h-0 before:w-0 before:rounded-full before:bg-skyblue-pl before:duration-500 before:ease-out hover:shadow-orange-600 hover:before:h-[70px] hover:before:w-[70px] hover:text-black-pl">
-				<a
-					href="#home"
-					class="flex w-full h-full relative rounded-full">
-					<UserIcon class="size-10 m-[15px]" /></a
-				>
-			</li>
-			<li
-				class="flex flex-col items-center justify-center mt-[20px] bg-pink-pl text-white shadow-2xl rounded-full size-[70px] transition-all before:absolute before:h-0 before:w-0 before:rounded-full before:bg-skyblue-pl before:duration-500 before:ease-out hover:shadow-orange-600 hover:before:h-[70px] hover:before:w-[70px] hover:text-black-pl">
-				<a
-					href="#home"
-					class="flex w-full h-full relative rounded-full">
-					<ExperienceIcon class="size-10 m-[15px]" /></a
-				>
-			</li>
-			<li
-				class="flex flex-col items-center justify-center mt-[20px] bg-pink-pl text-white shadow-2xl rounded-full size-[70px] transition-all before:absolute before:h-0 before:w-0 before:rounded-full before:bg-skyblue-pl before:duration-500 before:ease-out hover:shadow-orange-600 hover:before:h-[70px] hover:before:w-[70px] hover:text-black-pl">
-				<a
-					href="#home"
-					class="flex w-full h-full relative rounded-full">
-					<ProjectIcon class="size-10 m-[15px]" /></a
-				>
-			</li>
-			<li
-				class="flex flex-col items-center justify-center mt-[20px] bg-pink-pl text-white shadow-2xl rounded-full size-[70px] transition-all before:absolute before:h-0 before:w-0 before:rounded-full before:bg-skyblue-pl before:duration-500 before:ease-out hover:shadow-orange-600 hover:before:h-[70px] hover:before:w-[70px] hover:text-black-pl">
-				<a
-					href="#home"
-					class="flex w-full h-full relative rounded-full">
-					<SkillsIcon class="size-10 m-[15px]" /></a
-				>
-			</li>
-			<li
-				class="flex flex-col items-center justify-center mt-[20px] bg-pink-pl text-white shadow-2xl rounded-full size-[70px] transition-all before:absolute before:h-0 before:w-0 before:rounded-full before:bg-skyblue-pl before:duration-500 before:ease-out hover:shadow-orange-600 hover:before:h-[70px] hover:before:w-[70px] hover:text-black-pl">
-				<a
-					href="#home"
-					class="flex w-full h-full relative rounded-full">
-					<ContactIcon class="size-10 m-[15px]" /></a
-				>
-			</li>
-		</div>
-	</ul>
+<nav
+  class="fixed flex item-center bg-gradient-to-r from-indigo-500 w-1/5 h-screen"
+>
+  <ul class="flex flex-col justify-center m-[10px] items-center">
+    <img
+      class="border border-skublue-pl rounded-full m-[15px] lg:size-[130px] mg:size-[100px]"
+      src="elyrivenlogo.png"
+      alt="ElyRiven Logo"
+    />
+    <div
+      class="flex flex-col rounded-full w-[100px] h-[560px] bg-black-pl items-center border border-white-pl"
+    >
+      <li
+        class="flex flex-col items-center justify-center mt-[20px] bg-pink-pl text-white shadow-2xl rounded-full size-[70px] transition-all before:absolute before:h-0 before:w-0 before:rounded-full before:bg-skyblue-pl before:duration-500 before:ease-out hover:before:h-[70px] hover:before:w-[70px] hover:text-black-pl"
+      >
+        <a href="#home" class="flex w-full h-full relative rounded-full">
+          <HomeIcon class="size-10 m-[15px]" /></a
+        >
+      </li>
+      <li
+        class="flex flex-col items-center justify-center mt-[20px] bg-pink-pl text-white shadow-2xl rounded-full size-[70px] transition-all before:absolute before:h-0 before:w-0 before:rounded-full before:bg-skyblue-pl before:duration-500 before:ease-out hover:before:h-[70px] hover:before:w-[70px] hover:text-black-pl"
+      >
+        <a href="#aboutme" class="flex w-full h-full relative rounded-full">
+          <UserIcon class="size-10 m-[15px]" /></a
+        >
+      </li>
+      <li
+        class="flex flex-col items-center justify-center mt-[20px] bg-pink-pl text-white shadow-2xl rounded-full size-[70px] transition-all before:absolute before:h-0 before:w-0 before:rounded-full before:bg-skyblue-pl before:duration-500 before:ease-out hover:before:h-[70px] hover:before:w-[70px] hover:text-black-pl"
+      >
+        <a href="#experience" class="flex w-full h-full relative rounded-full">
+          <ExperienceIcon class="size-10 m-[15px]" /></a
+        >
+      </li>
+      <li
+        class="flex flex-col items-center justify-center mt-[20px] bg-pink-pl text-white shadow-2xl rounded-full size-[70px] transition-all before:absolute before:h-0 before:w-0 before:rounded-full before:bg-skyblue-pl before:duration-500 before:ease-out hover:before:h-[70px] hover:before:w-[70px] hover:text-black-pl"
+      >
+        <a href="#projects" class="flex w-full h-full relative rounded-full">
+          <ProjectIcon class="size-10 m-[15px]" /></a
+        >
+      </li>
+      <li
+        class="flex flex-col items-center justify-center mt-[20px] bg-pink-pl text-white shadow-2xl rounded-full size-[70px] transition-all before:absolute before:h-0 before:w-0 before:rounded-full before:bg-skyblue-pl before:duration-500 before:ease-out hover:before:h-[70px] hover:before:w-[70px] hover:text-black-pl"
+      >
+        <a href="#skills" class="flex w-full h-full relative rounded-full">
+          <SkillsIcon class="size-10 m-[15px]" /></a
+        >
+      </li>
+      <li
+        class="flex flex-col items-center justify-center mt-[20px] bg-pink-pl text-white shadow-2xl rounded-full size-[70px] transition-all before:absolute before:h-0 before:w-0 before:rounded-full before:bg-skyblue-pl before:duration-500 before:ease-out hover:before:h-[70px] hover:before:w-[70px] hover:text-black-pl"
+      >
+        <a href="#contact" class="flex w-full h-full relative rounded-full">
+          <ContactIcon class="size-10 m-[15px]" /></a
+        >
+      </li>
+    </div>
+  </ul>
 </nav>
 
 <style>
-	nav {
-		flex-direction: column;
-	}
+  nav {
+    flex-direction: column;
+  }
 </style>
