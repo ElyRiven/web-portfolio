@@ -1,49 +1,48 @@
 ---
-import Sidebar from '../components/Sidebar.astro';
-import Layout from '../layouts/Layout.astro';
+import Pill from "../components/Pill.astro";
+import Sidebar from "../components/Sidebar.astro";
+import Layout from "../layouts/Layout.astro";
+import GithubIcon from "../components/icons/Github.astro";
 ---
 
-<Layout title="ElyRiven Porfolio">
-	<main>
-		<Sidebar />
-		<section class="pl-[320px]">
-			<h4 >Elizabethasdasfasfasfasfasfs</h4>
-			<h4>Elizabeth</h4>
-			<h4>Elizabeth</h4>
-			<h4>Elizabeth</h4>
-			<h4>Elizabeth</h4>
-			<h4>Elizabeth</h4>
-			<h4>Elizabeth</h4>
-			<h4>Elizabeth</h4>
-			<h4>Elizabeth</h4>
-			<h4>Elizabeth</h4>
-			<h4>Elizabeth</h4>
-			<h4>Elizabeth</h4>
-			<h4>Elizabeth</h4>
-			<h4>Elizabeth</h4>
-			<h4>Elizabeth</h4>
-			<h4>Elizabeth</h4>
-			<h4>Elizabeth</h4>
-			<h4>Elizabeth</h4>
-			<h4>Elizabeth</h4>
-			<h4>Elizabeth</h4>
-			<h4>Elizabeth</h4>
-			<h4>Elizabeth</h4>
-			<h4>Elizabeth</h4>
-			<h4>Elizabeth</h4>
-
-		</section>
-		
-	</main>
+<Layout title="ElyRiven Web Porfolio - Software Developer">
+  <main>
+    <Sidebar />
+    <section class="pl-[320px]">
+      <section id="home">
+        <h4 class="pt-[175px]">Hello! I'm Elizabeth Tamayo</h4>
+        <h4>Software Engineer | Web Developer</h4>
+        <Pill>
+          <GithubIcon class="size-32" />
+          Github
+        </Pill>
+      </section>
+      <section id="aboutme">
+        <h4 class="pt-[175px]">Hello! I'm Elizabeth Tamayo</h4>
+      </section>
+      <section id="experience">
+        <h4 class="pt-[175px]">Hello! I'm Elizabeth Tamayo</h4>
+      </section>
+      <section id="projects">
+        <h4 class="pt-[175px]">Hello! I'm Elizabeth Tamayo</h4>
+      </section>
+      <section id="skills">
+        <h4 class="pt-[175px]">Hello! I'm Elizabeth Tamayo</h4>
+      </section>
+      <section id="contact">
+        <h4 class="pt-[175px]">Hello! I'm Elizabeth Tamayo</h4>
+      </section>
+    </section>
+  </main>
 </Layout>
 
 <style is:global>
-	main{
-		display: flex;
-		flex-direction: column;
-	}
-	h4{
-		font-size: 4rem;
-		font-weight: 200;
-	}
+  main {
+    display: flex;
+    flex-direction: column;
+  }
+  h4 {
+    font-size: 4rem;
+    font-weight: 600;
+  }
 </style>
