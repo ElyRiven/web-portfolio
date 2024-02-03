@@ -20,42 +20,48 @@ import ContactIcon from "./icons/Contact.astro";
       class="flex flex-col rounded-full w-[100px] h-[560px] bg-black-pl items-center border border-white-pl"
     >
       <li
-        class="flex flex-col items-center justify-center mt-[20px] bg-pink-pl text-white shadow-2xl rounded-full size-[70px] transition-all before:absolute before:h-0 before:w-0 before:rounded-full before:bg-skyblue-pl before:duration-500 before:ease-out hover:before:h-[70px] hover:before:w-[70px] hover:text-black-pl"
+        id="nav-home"
+        class="nav-item flex items-center justify-center mt-[20px] bg-pink-pl text-white shadow-2xl rounded-full size-[70px] transition-all before:absolute before:h-0 before:w-0 before:rounded-full before:bg-orange-pl before:duration-500 before:ease-out hover:before:h-[70px] hover:before:w-[70px] hover:text-black-pl"
       >
         <a href="#home" class="flex w-full h-full relative rounded-full">
           <HomeIcon class="size-10 m-[15px]" /></a
         >
       </li>
       <li
-        class="flex flex-col items-center justify-center mt-[20px] bg-pink-pl text-white shadow-2xl rounded-full size-[70px] transition-all before:absolute before:h-0 before:w-0 before:rounded-full before:bg-skyblue-pl before:duration-500 before:ease-out hover:before:h-[70px] hover:before:w-[70px] hover:text-black-pl"
+        id="nav-aboutme"
+        class="nav-item flex items-center justify-center mt-[20px] bg-pink-pl text-white shadow-2xl rounded-full size-[70px] transition-all before:absolute before:h-0 before:w-0 before:rounded-full before:bg-orange-pl before:duration-500 before:ease-out hover:before:h-[70px] hover:before:w-[70px] hover:text-black-pl"
       >
         <a href="#aboutme" class="flex w-full h-full relative rounded-full">
           <UserIcon class="size-10 m-[15px]" /></a
         >
       </li>
       <li
-        class="flex flex-col items-center justify-center mt-[20px] bg-pink-pl text-white shadow-2xl rounded-full size-[70px] transition-all before:absolute before:h-0 before:w-0 before:rounded-full before:bg-skyblue-pl before:duration-500 before:ease-out hover:before:h-[70px] hover:before:w-[70px] hover:text-black-pl"
+        id="nav-experience"
+        class="nav-item flex items-center justify-center mt-[20px] bg-pink-pl text-white shadow-2xl rounded-full size-[70px] transition-all before:absolute before:h-0 before:w-0 before:rounded-full before:bg-orange-pl before:duration-500 before:ease-out hover:before:h-[70px] hover:before:w-[70px] hover:text-black-pl"
       >
         <a href="#experience" class="flex w-full h-full relative rounded-full">
           <ExperienceIcon class="size-10 m-[15px]" /></a
         >
       </li>
       <li
-        class="flex flex-col items-center justify-center mt-[20px] bg-pink-pl text-white shadow-2xl rounded-full size-[70px] transition-all before:absolute before:h-0 before:w-0 before:rounded-full before:bg-skyblue-pl before:duration-500 before:ease-out hover:before:h-[70px] hover:before:w-[70px] hover:text-black-pl"
+        id="nav-projects"
+        class="nav-item flex items-center justify-center mt-[20px] bg-pink-pl text-white shadow-2xl rounded-full size-[70px] transition-all before:absolute before:h-0 before:w-0 before:rounded-full before:bg-orange-pl before:duration-500 before:ease-out hover:before:h-[70px] hover:before:w-[70px] hover:text-black-pl"
       >
         <a href="#projects" class="flex w-full h-full relative rounded-full">
           <ProjectIcon class="size-10 m-[15px]" /></a
         >
       </li>
       <li
-        class="flex flex-col items-center justify-center mt-[20px] bg-pink-pl text-white shadow-2xl rounded-full size-[70px] transition-all before:absolute before:h-0 before:w-0 before:rounded-full before:bg-skyblue-pl before:duration-500 before:ease-out hover:before:h-[70px] hover:before:w-[70px] hover:text-black-pl"
+        id="nav-skills"
+        class="nav-item flex items-center justify-center mt-[20px] bg-pink-pl text-white shadow-2xl rounded-full size-[70px] transition-all before:absolute before:h-0 before:w-0 before:rounded-full before:bg-orange-pl before:duration-500 before:ease-out hover:before:h-[70px] hover:before:w-[70px] hover:text-black-pl"
       >
         <a href="#skills" class="flex w-full h-full relative rounded-full">
           <SkillsIcon class="size-10 m-[15px]" /></a
         >
       </li>
       <li
-        class="flex flex-col items-center justify-center mt-[20px] bg-pink-pl text-white shadow-2xl rounded-full size-[70px] transition-all before:absolute before:h-0 before:w-0 before:rounded-full before:bg-skyblue-pl before:duration-500 before:ease-out hover:before:h-[70px] hover:before:w-[70px] hover:text-black-pl"
+        id="nav-contact"
+        class="nav-item flex items-center justify-center mt-[20px] bg-pink-pl text-white shadow-2xl rounded-full size-[70px] transition-all before:absolute before:h-0 before:w-0 before:rounded-full before:bg-orange-pl before:duration-500 before:ease-out hover:before:h-[70px] hover:before:w-[70px] hover:text-black-pl"
       >
         <a href="#contact" class="flex w-full h-full relative rounded-full">
           <ContactIcon class="size-10 m-[15px]" /></a
@@ -64,9 +70,47 @@ import ContactIcon from "./icons/Contact.astro";
     </div>
   </ul>
 </nav>
-
 <style>
   nav {
     flex-direction: column;
   }
+  .nav-item.clicked:before {
+    height: 70px;
+    width: 70px;
+  }
+  .nav-item.clicked {
+    color: black;
+  }
 </style>
+<script>
+  const navItems = document.querySelectorAll(".nav-item");
+  const sections = document.querySelectorAll("section");
+
+  if (navItems.length > 0) {
+    navItems[0].classList.add("clicked");
+  }
+
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          const id = entry.target.getAttribute("id");
+          const activeNavItem = document.querySelector(`#nav-${id}`);
+          navItems.forEach((navItem) => {
+            navItem.classList.remove("clicked");
+          });
+          if (activeNavItem) {
+            activeNavItem.classList.add("clicked");
+          }
+        }
+      });
+    },
+    {
+      threshold: 0.7,
+    }
+  );
+
+  sections.forEach((section) => {
+    observer.observe(section);
+  });
+</script>

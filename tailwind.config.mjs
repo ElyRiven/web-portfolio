@@ -6,7 +6,7 @@ export default {
     extend: {
       colors: {
         "white-pl": "#fdfaf9",
-        "orange-pl": "#f79c6a",
+        "orange-pl": "#e36414",
         "black-pl": "#131a21",
         "pink-pl": "#db46d9",
         "skyblue-pl": "#2e69f2",

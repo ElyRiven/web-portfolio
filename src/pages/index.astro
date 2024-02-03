@@ -3,36 +3,56 @@ import Pill from "../components/Pill.astro";
 import Sidebar from "../components/Sidebar.astro";
 import Layout from "../layouts/Layout.astro";
 import GithubIcon from "../components/icons/Github.astro";
+import LinkedInIcon from "../components/icons/LinkedIn.astro";
 ---
 
 <Layout title="ElyRiven Web Porfolio - Software Developer">
   <main>
     <Sidebar />
-    <section class="pl-[320px]">
+    <div class="pl-[320px]">
       <section id="home">
-        <h4 class="pt-[175px]">Hello! I'm Elizabeth Tamayo</h4>
-        <h4>Software Engineer | Web Developer</h4>
-        <Pill>
-          <GithubIcon class="size-32" />
-          Github
-        </Pill>
+        <div class="pt-[175px]"></div>
+        <h4>Hello!</h4>
+        <h4>I'm Elizabeth Tamayo</h4>
+        <h4 class="text-5xl text-orange-pl">
+          Software Engineer | Web Developer
+        </h4>
+        <div class="flex flex-row">
+          <a
+            class="flex h-10 w-fit my-[20px] px-[13px] items-center rounded-full border border-white-pl bg-pink-pl/70 duration-200 hover:bg-black-pl"
+            href="public/CV_Daniel_Tamayo.pdf"
+            download
+            >Download CV
+          </a>
+          <div class="w-[20px]"></div>
+          <Pill href="https://github.com/ElyRiven">
+            <GithubIcon class="size-6 mr-[10px]" />
+            Github
+          </Pill>
+          <div class="w-[20px]"></div>
+          <Pill href="https://www.linkedin.com/in/daniel-tamayo99/">
+            <LinkedInIcon class="size-6 mr-[10px]" />
+            LinkedIn
+          </Pill>
+        </div>
+        <div class="pt-[270px]"></div>
       </section>
       <section id="aboutme">
-        <h4 class="pt-[175px]">Hello! I'm Elizabeth Tamayo</h4>
+        <h4 class="p-[300px]">Hello! I'm Elizabeth Tamayo</h4>
       </section>
       <section id="experience">
-        <h4 class="pt-[175px]">Hello! I'm Elizabeth Tamayo</h4>
+        <h4 class="p-[300px]">Hello! I'm Elizabeth Tamayo</h4>
       </section>
       <section id="projects">
-        <h4 class="pt-[175px]">Hello! I'm Elizabeth Tamayo</h4>
+        <h4 class="p-[300px]">Hello! I'm Elizabeth Tamayo</h4>
       </section>
       <section id="skills">
-        <h4 class="pt-[175px]">Hello! I'm Elizabeth Tamayo</h4>
+        <h4 class="p-[300px]">Hello! I'm Elizabeth Tamayo</h4>
       </section>
       <section id="contact">
-        <h4 class="pt-[175px]">Hello! I'm Elizabeth Tamayo</h4>
+        <h4 class="p-[300px]">Hello! I'm Elizabeth Tamayo</h4>
       </section>
-    </section>
+    </div>
   </main>
 </Layout>
 
